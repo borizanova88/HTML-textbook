@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>HTML учебник</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+    <a class="navbar-brand">Меню</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Начало</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#intro">Въведение</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#text">Текст</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#color">Цветове</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#list">Списъци и разделители</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#image">Изображения</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hyperlink">Хипервръзки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#video">Аудио и видео</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-6 col-xxl-3">
+       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Въведение</strong>
+          <h3 class="mb-0" >Първи стъпки в HTML</h3>
+          <p class="card-text mb-auto">Въведение в HTML. Структурно описание на документа. Основни тагове. Кое какво означава в кода?</p>
+          <a href="#intro" class="stretched-link"> Виж още </a>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3">
+       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Текст</strong>
+          <h3 class="mb-0">Форматиране на текст</h3>
+          <p class="card-text mb-auto">Езика HTML ви позволява да разполагате текст на страницата, да го подравнявате, оцветявате, да задавате големината и шрифта.</p>
+          <a href="#text" class="stretched-link"> Виж още </a>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3">
+       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Цветове</strong>
+          <h3 class="mb-0">Задаване на цветове в HTML</h3>
+          <p class="card-text mb-auto">Цветовете в web страниците се представят със шестразредни шестнадесетични числа, започващи със символа "#".</p>
+          <a href="#color" class="stretched-link"> Виж още </a>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3">
+       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Изображения</strong>
+          <h3 class="mb-0">Вмъкване на графични елементи</h3>
+          <p class="card-text mb-auto">Една от най-силните характеристики на езика HTML, е възможността да разполагате графични обекти/снимки върху страницата.</p>
+          <a href="#image" class="stretched-link"> Виж още </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<div>
+<h1 class="intro" id="intro"> Първи стъпки в HTML</h1>
+<h2>Въведение в HTML. Структурно описание на документа. Основни тагове</h2>
+<text>HTML, което означава HyperText Markup Language, е език за създаване на web  страници. 
+Страниците създадени с HTML могат да съдържат графика, текст, музика, анимация, както и връзки към други страници (хиперлинкове).
+
+От какво се нуждаете за да създадете интернет страница? Трябват ви две неща - текстов редактор и интернет браузър.
+ За текстов редактор използвайте вградения в Windows Notepad (По-добра безплатна алтернатива е Notepad++), а за браузър можете на използвате 
+ Internet Explorer, Chrom, Firefox (най-добрият вариант е и трите). Файлът, който ще създадете с Notepad/Notepad++ е текстов файл, който обаче 
+ трябва да се запише с разширение .html (или .htm). Този файл ще наричаме HTML документ.</text>
+ 
+ <h3>Кое какво означава в кода?</h3>
+ <xmp><b> < HTML > <br>
+< HEAD ><br>
+< TITLE > My first page - Title < /TITLE ><br>
+< /HEAD ><br>
+< BODY ><br>
+<br>
+My first page<br>
+<br>
+< /BODY ><br>
+< /HTML ></b></xmp></p>
+ <text> Текста между символите < и > се нарича елемент (tag). Елемента показва на браузъра 
+ какво действие да извърши. Можем да разделим елементите на два вида - отварящи и затварящи. Отварящите задават на браузъра да започне някакво действие,
+ а затварящите да го приключи. Затварящият елемент се различава от отварящия само по символа / пред името на елемента. От примера се вижда, че елементите
+ вървят по двойки, отварящ и затварящ.
+
+HTML документа започва винаги с елемента < HTML > и завършва съответно с < /HTML>. < HTML > означава началона HTML документ, а < /HTML > край на HTML документ. <br>
+Следващата задължителна двойка елементи е < HEAD > и < /HEAD >, което буквално означава глава (заглавна част на документа). В нея обикновено се съдържа информация
+ за самия HTML документ. В примера горе там стои заглавието на документа < TITLE >. Между елементите < TITLE > и < /TITLE > се съдържа името на HTML документа.<br>
+ Когато срещне тази двойка елементи браузъра визуализира текста между тях на заглавната си лента най-отгоре.<br>
+</text>
+
+<hr>
+<h1 id="text">Форматиране на текст (шрифт, големина, стил)</h1>
+    <text>
+    Езика HTML ви позволява да разполагате текст на страницата, да го подравнявате, оцветявате, да задавате
+    големината на шрифта и самия шрифт. Нека да направим една страница и да разположим някакъв текст:
+    <xmp>
+  <HTML>
+  <HEAD>
+    <TITLE>Text</TITLE>
+  </HEAD>
+  <BODY>
+  </BODY>
+    </HTML>
+    </xmp>
+    </text>
+    <text>
+  Ако искате да удебелите, наклоните или подчертаете текста, трябва да използвате двойките елементи <xmp><B> и </B></xmp>
+  за удебеляване (Bold), <xmp><I> и </I></xmp> за наклон (Italic) и  <xmp><U> и </U> </xmp>
+  за подчертаване (Underline).
+  
+  <xmp>
+  <HTML>
+<HEAD>
+    <TITLE>Text</TITLE>
+<HEAD>
+<BODY>
+<B><I><U>Това е web страница с удебелен, наклонен и подчертан текст</U></I></B>
+</BODY>
+</HTML>
+  </xmp>
+  </text>
+  <text>
+   Можете да използвате тези елементи за да форматирате различни части от текста по различен начин.
+   Например да изпишете "Това е web" с наклонен шрифт, "страница с удебелен, наклонен" с наклонен и удебелен 
+   шрифт, "и подчертан текст" с удебелен и подчертан шрифт. Ето как става:
+<xmp>
+<I>Това е web</I><I><B>страница с с удебелен, наклонен</B></I><B><U>и подчертан текст</U></B></xmp>
+
+    Внимавайте с вложените елементи. Трябва първия затварящ да отговаря на последния отварящ от същия вид. 
+  Понеже така изглежда малко нечетливо, можете да го напишете така:
+<xmp>
+<I>Това е web</I>
+<I><B> страница с червен текст</B></I>
+<B><U> на син фон</U></B>
+</xmp>
+Ефекта ще е същия. Въпреки че пренасяте различни части от текста на нов ред, браузъра не го разбира и слепва
+ думите една зад друга. За да минете на нов ред трябва да използвате елемента <xmp><BR></xmp> в мястото където искате да 
+ минете на нов ред. Този елемент е единичен и на него не отговаря затварящ елемент. Вижте следващия пример:
+ </text>
+<xmp>
+<HTML>
+<HEAD>
+    <TITLE> Font </TITLE>
+</HEAD>
+<BODY>
+    <FONT><B>Удебелен текст</b></FONT><BR>
+    <FONT><i>Наклонен текст.</i></FONT><BR>
+    <FONT><U>Подчертан текст</u></FONT><BR>
+</BODY>
+</HTML>
+</xmp>
+<text>
+   На екрана трябва да видите ето това:<br></text>
+  <text> <FONT><B>Удебелен текст.</b></FONT><BR>
+    <FONT><i>Наклонен текст.</i></FONT><BR>
+    <FONT><U>Подчертан текст.</u></FONT><BR>
+  </text>
+</hr>
+
+<hr>
+<h1 class="color" id="color"> Задаване на цветове в HTML </h1>
+ <text>Цветовете в web страниците се представят със шестразредни шестнадесетични числа, започващи със символа "#". <br>
+ Например #000000, #FFFFFF, #COBB56. Първата двойка цифри в числото означава количеството на червения цвят, втората на зеления,
+ третата на синия. Всеки цвят съдържа 256 нюанса, от 00 до FF, като 00 е липса на цвят, а FF пълен цвят. Чрез смесването на основните цветове, 
+ браузъра визуализира останлите цветове на монитор.<br>
+<br>
+Пример: Когато стойностите за трите цвята са 00, тогава се показва черен цвят (липсва осветеност). При стойности и за трите цвята FF цветът е бял<br>
+ (максимална осветеност). В таблицата по-долу са показани основните цветове и как се формират:<br></text>
+ <text style="color: black; text-align:left; font-size: 20px"> "000000"  Черен текст! </text> <br>
+ <text style="color: white; text-align:left; font-size: 20px; background-color:black"> "FFFFFF"  Бял текст! </text> <br>
+ <text style="color: blue; text-align:left; font-size: 20px"> "0000FF"  Син текст! </text><br>
+ <text style="color: green; text-align:left; font-size: 20px"> "00FF00"  Зелен текст! </text><br>
+ <text style="color: red; text-align:left; font-size: 20px"> "FF0000"  Червен текст! </text><br>
+ <text style="color: yellow; text-align:left; font-size: 20px"> "FFFF00"  Жълт текст! </text><br>
+ <text style="color: purple; text-align:left; font-size: 20px"> "FF00FF" Лилав текст! </text><br>
+ 
+ <text>
+  В случай, че искаме да изберем конкретен цвят от <B>RGB</B> системата, на който не ни е известен 
+шестнайсетичния код, то удобен инструмент е представен на: <A href="https://www.webfx.com/web-design/color-picker/">http://www.colorpicker.com</A>.<br>
+</text>
+<text>Начин за задаване на цвят на текст: <br></text>
+<xmp>
+< !DOCTYPE HTML ><br>
+< HTML ><br>
+< HEAD ><br>
+< TITLE>Colors< /TITLE><br>
+< ТЕXT style="color: blue"> Син текст! < /TEXT> <br><br>
+< /HEAD > <br>
+< /HTML ><br>
+<br>
+ </xmp>
+ <br>
+ <text>Начин за задаване на цвят на текст и фон (в нашия случай страницата е с розов фон и сини букви.)</text>
+ <xmp>
+ 
+ <!DOCTYPE HTML><br>
+< HTML><br>
+< HEAD><br>
+< TITLE>pink background< /TITLE><br>
+< /HEAD><br>
+< BODY BGCOLOR="FF00FF" TEXT="0000FF"><br>
+< /BODY><br>
+< /HTML><br>
+ </xmp><br>
+</hr>
+
+<hr>
+<h1 class="list" id="list">Работа със списъци</h1>
+<h2>Номерирани списъци</h2>
+
+<text>
+Подреден списък можете да създадете с елемента < OL > и съответно затварящия < /OL >. Елементите на списъка се задават с елемента
+ < LI >, който може да се използва като двойка елементи (за предпочитане) или като единичен елемент. Нека направим един такъв списък:<br>
+</text>
+<text>Университет</text>
+<ol style="list-style-type: lower-greek">
+  <li class="a">История и ректори</li>
+  <li class="a">Управление и структура</li>
+  <li class="a">Факултети</li>
+  <li class="a">Нормативни документи</li>
+  <li class="a">Акредитации</li>
+
+</ol>
+
+<xmp style="color: #32CD32"> 
+<ol style="list-style-type: lower-greek">
+  <li>История и ректори</li>
+  <li>Управление и структура</li>
+  <li>Факултети</li>
+  <li>Нормативни документи</li>
+  <li>Акредитации</li>
+
+</ol>
+</xmp>
+<br><hr>
+<ol style="color:red" type="a"><b>
+  <li>История и ректори</li>
+  <li>Управление и структура</li>
+  <li>Факултети</li>
+  <li>Нормативни документи</li>
+  <li>Акредитации</li>
+
+</b></ol>
+<xmp style="color: #32CD32">
+<ol type="a"><b>
+  <li>История и ректори</li>
+  <li>Управление и структура</li>
+  <li>Факултети</li>
+  <li>Нормативни документи</li>
+  <li>Акредитации</li>
+</xmp>
+<br><hr>
+<ol  type="A"><i>
+  <li>История и ректори</li>
+  <li>Управление и структура</li>
+  <li>Факултети</li>
+  <li>Нормативни документи</li>
+  <li>Акредитации</li>
+
+</i></ol>
+<xmp style="color: #32CD32">
+<ol type="A"><i>
+  <li>История и ректори</li>
+  <li>Управление и структура</li>
+  <li>Факултети</li>
+  <li>Нормативни документи</li>
+  <li>Акредитации</li>
+</xmp>
+<br>
+<br><br><br><hr>
+
+<text> 
+Неподреден списък се създава с двойката елементи < UL> < /UL>. Този списък за разлика от подредения
+не е номериран, а използва някакъв символ за всеки елемент от списъка, например точка.
+</text>
+<ul type="disc" style="line-height:60%">
+  <li>Технологичен</li>
+  <li>Технически</li>
+  <li>Стопански</li>
+  <li>Демартамент по езиково обучение и спорт</li>
+</ul>
+<xmp style="color: #32CD32">
+<ul type="disc" style="line-height:60%">
+  <li>Технологичен</li>
+  <li>Технически</li>
+  <li>Стопански</li>
+  <li>Демартамент по езиково обучение и спорт</li>
+</ul>
+</xmp>
+<br><br><br><hr>
+<ul type="circle" style="line-height:150%">
+  <li>Технологичен</li>
+  <li>Технически</li>
+  <li>Стопански</li>
+  <li>Демартамент по езиково обучение и спорт</li>
+</ul>
+<xmp style="color: #32CD32">
+<ul type="circle" style="line-height:150%">
+  <li>Технологичен</li>
+  <li>Технически</li>
+  <li>Стопански</li>
+  <li>Демартамент по езиково обучение и спорт</li>
+</ul>
+</xmp>
+<br><br><br><hr>
+<ul style="color:blue" type="square">
+  <li>Технологичен</li>
+  <li>Технически</li>
+  <li>Стопански</li>
+  <li>Демартамент по езиково обучение и спорт</li>
+</ul>
+<xmp style="color: #32CD32">
+<ul style="color:blue" type="square">
+  <li>Технологичен</li>
+  <li>Технически</li>
+  <li>Стопански</li>
+  <li>Демартамент по езиково обучение и спорт</li>
+</ul>
+</xmp>
+<br><br><br><hr>
+<ol type="I">
+  <li>История и ректори</li>
+  <li>Управление и структура</li>
+  <li>Факултети</li>
+      <ul type="disc">
+      <li>Технологичен</li>
+        <ul type="square">
+        <li class="m">Технология на месото и рибата</li>
+        <li class="m">Технология на млякото и млечните продукти</li>
+        <li class="m">Консервиране и хладилна технология</li>
+        <li class="m">Аналитична химия и физикохимия</li>
+        </ul>
+      <li>Технически</li>
+        <ul type="disc">
+        <li class="n">КСТ</li>
+        <li class="n">Процеси и апарати</li>
+        <li class="n">Машини и апарати за ХВП</li>
+        <li class="n">Автоматика, информационна и управляваща техника</li>
+        </ul>
+      <li>Стопански</li>
+      <li>Демартамент по езиково обучение и спорт</li>
+</ul>
+
+  <li>Нормативни документи</li>
+  <li>Акредитации</li>
+  
+</ol>
+<hr>
+<br><br><br> 
+
+<text>Списъците с обяснения се създават с двойката елементи < DL> < /DL>. Елементите на списъка се задават с < DT>, а обяснението към него с < DD>.</text>
+<dt>HTML</dt> 
+    <dd>Hyper Text Markup Language</dd>
+<dt>CSS</dt>
+    <dd>Cascading Style Sheet</dd>
+<dt>JS</dt>
+    <dd>Java Script</dd>
+    <br><hr>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+</hr>
+
+<hr>
+<h1 id="image">Вмъкване на графични елементи</h1>
+<h3>(Снимки)</h3>
+<text>Една от най-силните характеристики на езика HTML, 
+ е възможността да разполагате графични обекти/снимки върху страницата. Това става с елемента < IMG >  
+ и атрибута му SRC, като след SRC записвате името на файла, който искате да се покаже:<br>
+ </text>
+ <img src="rabbit.jpg">
+ <text><br>Така на екрана си вече имате картинка на зайче. В езика HTML най-често се използват графичните
+формати GIF (.gif), JPEG (.jpg) и PNG (.png). Предимството на първият е, че може да съдържа анимация 
+ и прозрачен фон, но се ограничава само до 256 цвята. При вторият формат няма ограничение за цветовете и картинките са с по-високо качество, но пък няма възможност за прозрачен фон, нито анимация. Третият
+има възможност за прозрачен фон, но няма възможност за анимиране. <br>
+ <hr>
+ </text>
+ <text><br>Когато слагате картинка на web страницата си трябва да знаете от колко точки е съставена 
+ (хоризонтално и вертикално).Rазбира се, можете да свиете или разширите изображението.<br>
+ Това става с атрибутите WIDTH и HEIGHT на елемента < IMG >. Например нека направим същата 
+ картинка на зайче да се показва като 450x380 точки (пиксела):<br>
+<br>
+<xmp><b>< IMG SRC="rabbit.jpg" WIDTH="450" HEIGHT="380" ></b></xmp>
+<br>
+ </text>
+  <img src="rabbit.jpg"WIDTH="450" HEIGHT="380">
+ <br><hr>
+ <text>
+ Можете да използвате също така картинки за фон на web страници. Това става с арибута BACKGROUND на
+ елемента <BODY>. Ако желаем да направим страница с фон - същата картинка на зайче:<br>
+
+<xmp> < HTML ><br>
+< HEAD ><br>
+    < TITLE >background< /TITLE ><br>
+< /HEAD ><br>
+< BODY BACKGROUND="rabbit.jpg" ><br>
+< /BODY ><br>
+< /HTML ><br>
+</xmp>
+<br> <br> <hr>
+ </text>
+ <h3>IMAGE MAP</h3>
+ <text>Трябва да се "засекат" точните кооординати на дадената снимка, към които ние искаме да прехвърлим някакъв линк.<br>
+ Също така се записва формата, с която ние "засичаме" коорадинатите.
+ <xmp>< area shape= " " coords=" " href =" "></xmp>
+ </text>
+ <img src="cifri.jpg" alt="cifri" usemap="#workmap">
+ <map name="workmap">
+  <area shape="circle" coords="148,197,114" href="https://bg.wikipedia.org/wiki/1_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="392,194,114" href="https://bg.wikipedia.org/wiki/2_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="665,196,101" href="https://bg.wikipedia.org/wiki/3_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="907,192,103" href="https://bg.wikipedia.org/wiki/4_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="1138,188,106" href="https://bg.wikipedia.org/wiki/5_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="144,509,125" href="https://bg.wikipedia.org/wiki/6_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="406,504,119" href="https://bg.wikipedia.org/wiki/7_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="651,507,104" href="https://bg.wikipedia.org/wiki/8_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="858,508,89" href="https://bg.wikipedia.org/wiki/9_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+  <area shape="circle" coords="1108,520,126" href="https://bg.wikipedia.org/wiki/10_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)">
+</map>
+</hr>
+
+<hr>
+<h1 id="hyperlink"> Вмъкване на хиппервръзки</h1>
+<text>Езика HTML позволява да правите препратки към други страници, към части от същата страница,
+ към файлове, картинки, електронна поща. Тези препратки се наричат ХИПЕРЛИНКОВЕ (или хипервръзки). <br>
+ Без хиперлинковете един web сайт не би имал никакъв смисъл. Хиперлинк се създава с двойката елементи < A > и < /A >. <br>
+ Когато правите препратка към някакъв интернет адрес, трябва да използвате атрибута HREF на елемента <A></text>
+<text>Нека да анализираме този пример.С < A HREF= се задава адреса, към който води препратката. <br>
+В случая това е адреса на google.bg, предхождан от http ://. Този адрес се нарича още URL. След това изписвате текста,
+ който ще води до съответния адрес, в случая текста е Image.html. На екрана ви този сайт трябва да изглежда така: "Image.html". Когато посочите с мишката този надпис, курсора мишката се сменя от стрелка на сочеща ръка. Ако кликнете върху него
+отивате директно на адреса на Image.html. Забележете, че цвета на  текста е син, а самия текст е подчертан без вие да сте 
+задавали такива параметри. Това е така, защото браузъра по подразбиране показва хиперлинка подчертан и със син цвят.<br>
+ Ако кликнете върху него, отидете на google.bg и после пак се върнете на тази страница, цвета вече няма да бъде син, а лилав.<br>
+ Причината за това е, че браузъра визуализира посетените от вас линкове с лилав цвят. Можете да промените цвета на линка по 
+ ваше желание. Това става с атрибутите на елемента < BODY > LINK, ALINK и VLINK. LINK  задава какъв да бъде цвета на линка,
+ ALINK (active link) задава цвета на активния линк (този, на който се намирате в момента), а VLINK (visited link) задава 
+ цвета на посетените вече от вас линкове. Ето един такъв пример:</text>
+ <br><xmp>< HTML ><br>
+< HEAD ><br>
+< TITLE >hyperlink< /TITLE ><br>
+< /HEAD ><br>
+< BODY LINK="#00FF00" ALINK="#00FFFF" VLINK="#FF0000" ><br>
+< A HREF="линк към страницата,която желаете">< B > тук < /B >< /A ><br>
+< /BODY ><br>
+< /HTML ><br></xmp>
+ <br><br><br>
+ <h2>Изображение като хиппервръзка</h2>
+ <text>Картинките често служат и като хиперлинкове към други страници. По този начин можем да създаваме бутони с произволен изглед.<br>
+ За да добавите хиперлинк към картинка, трябва да използвате двойката елементи < A > и < /A >. Вижте един пример:</text><br>
+ <xmp>< HTML ><br>
+< HEAD ><br>
+    < TITLE> image < /TITLE ><br>
+< /HEAD ><br>
+< BODY ><br>
+< A HREF=" http ://www.google.bg ">< IMG SRC="images/google.gif" BORDER="0" ALT="google.bg">< /A ><br>
+< A HREF=" https ://www.abv.bg/ ">< IMG SRC="images/abvbg.gif" BORDER="0" ALT="dir.bg">< /A ><br>
+< /BODY ><br>
+< /HTML ><br></xmp>
+<text>При разглеждане на горния html документ ще се появят две картинки. При кликване върху първата ще се отвори адреса www.google.bg,
+ а втората ще води до www.abv.bg.</text><br><br>
+<a href="http://www.google.bg"> 
+<img src="gg.jpg" alt="google.bg"></a><br>
+<a href="http://www.abv.bg">
+<img src="abv-logo.png"  alt="abv.bg"></a>
+<br><br>
+</hr>
+
+<hr>
+<h1 id="video">Работа с мултимедия</h1>
+    <h3>Вмъкване на аудио файл</h3>
+    <text>
+    Eзика HTML 5 позволява да се добавя музикален фон на интернет страница. За тази цел да се използват музикални формати,
+    като .mp3, .ogg и .wav. Като за предпочитане е да се използва MP3 формат.<br>
+
+  Тагът, който се използва е < audio >. Чрез него се стартира музикален плеър. За визуализиране контролите на плеъра се използва атрибута CONTROLS. <br>
+  С атрибута SRC се указва пътя до музикалния файл, а с TYPE се задава неговия формат Например:<xmp> < source src="music.mp3" type="audio/mpeg" >.</xmp><br>
+    </text>
+    
+    
+    
+    
+    
+    <br><br><audio controls>
+    <source src="playback.mp3" type="audio/mpeg">
+    </audio><br><br>
+    <hr>
+    <text><br>Начин за вмъкване на аудио файл:<br>
+    <text>< audio controls src="audio.mp3" type="audio/mp3">. Вашият браузър не поддържа вашия файл < /audio >. <br></text>
+    При липсата на "controls", не можем да контролираме аудио файлът.<br>
+    При наличието на "mute", аудио файлът е заглушен.<br>
+    При наличието на "autoplay", аудио файлът тръгва автоматично.<br>
+    <br><br>
+    Пътят до файла се указва с атрибута SRC. Атрибутите WIDTH и HEIGHT задават ширината и височината на панела за контрол на звука в пиксели. <br>
+    Ако искате панела да се вижда е добре задължително да задавате стойности на атрибутите WIDTH и HEIGHT. Атрибута LOOP може да има стойности -
+    true, false или число. Когато стойността е true, мелодията започва отново веднага след като свърши, докато при false се изпълнява само веднъж и спира. <br>
+    Ако зададете числова стойност на LOOP, мелодията се просвирва толкова пъти, колкото е числото, например LOOP="3" ще изпълни мелодията три пъти и ще спре.<br>
+    </text>
+    <hr>
+    <h3>Вмъкване на видео файл</h3>
+    <video controls source src="bulg.mp4" type="video/mp4" width="800">
+    </video><br><br>
+    <hr>
+    <text><br>Начин за вмъкване на видео файл:<br>
+    <br><xmp>< video controls ><br>
+    < source src="video.mp4" type="video/mp4" width="150" loop=3 ><br>
+    < /video > </xmp><br>
+    При липсата на "controls", не можем да контролираме видео файлът.<br>
+    При наличието на "mute", видео файлът е заглушен.<br>
+    При наличието на "autoplay", видео файлът тръгва автоматично.
+    </text>
+    
+    <text>
+    Елемента EMBED се разпознава от повечето браузъри, но при някой се изпозлват различни атрибути. Например вместо LOOP може да се използва
+    атрибута PLAYCOUNT за повторение на изпълнението. Може да има атрибут VOLUME, с който се контролирате силата на звука. Все още атрибутите не са
+    уеднаквени във всички браузъри. Ако държим да добавим музикален фон към интернет страница трябва да използваме два метода с EMBED и BGSOUND,
+    като за BGSOUND стойност на LOOP,за автоматично започване на песента отначало е -1. Например:
+<xmp>
+< HTML ><br>
+< HEAD ><br>
+< TITLE >Интернет страница с музикален фон< /TITLE ><br>
+< BGSOUND SRC="music.mid" LOOP="-1"><br>
+< /HEAD ><br>
+<br><br>
+
+< BODY ><br>
+< EMBED SRC="music.mid" WIDTH="128" HEIGHT="128" LOOP="true" ><br>
+< /BODY ><br>
+</xmp>
+    </text>
+</hr>
+
+
+
+<a href="#home" class="button">↑</a>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Допълнителна иформация</h6>
+                <p>Десислава Боризанова
+                  <br/>ПУ"Паисий Хилендарски"
+                  <br/>БИТ, 2-ри курс, РО
+                  <br/>Фак. номер: 2001561062
+                </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Контакти</h6>
+            <p>Пловдив
+            <br/>stu2001561062@uni-plovdiv.bg
+            <br/> 089123456 </p>
+        </div>
+    <div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
